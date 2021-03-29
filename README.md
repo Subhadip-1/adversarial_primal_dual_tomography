@@ -9,6 +9,6 @@ Follow the steps below:
   * `cd odl`
   * `pip install --editable .`
   * Now run `python`, then `import odl` and check if `print(odl.__version__)` outputs `1.0.0.dev0`. `odl 0.7.0` and `odl 1.0.0.dev0` compute different forward operators. This code runs with `odl 1.0.0.dev0`. 
-  * Simulate projection data: `python simulate_projections_for_train_and_test.py`
-  * Train and evaluate model (logs are auto-saved): `python train_adversarial_LPD.py` 
+* Simulate projection data: `python simulate_projections_for_train_and_test.py`
+* Train and evaluate model (logs are auto-saved): `python train_adversarial_LPD.py` 
  

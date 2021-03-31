@@ -124,7 +124,7 @@ for epoch in range(num_epochs):
         #load the images and compute the loss
         phantom = batch["phantom"].to(device)
         sinogram = batch["sinogram"].to(device)
-        fbp = batch["sinogram"].to(device) #corresponding FBP for performance tracking: FBP and sinogram aligned
+        fbp = batch["fbp"].to(device) #corresponding FBP for performance tracking: FBP and sinogram aligned
         fbp_image = fbp.cpu().detach().numpy().squeeze()
         x_init = torch.from_numpy(fbp_image).view(fbp.size()).to(device).requires_grad_(True)
         

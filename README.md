@@ -11,5 +11,5 @@ This repo contains a simple pytorch implementation of the adversarially learned 
   * Now run `python`, then `import odl` and check if `print(odl.__version__)` outputs `1.0.0.dev0`. `odl 0.7.0` and `odl 1.0.0.dev0` compute different forward operators. This code runs with `odl 1.0.0.dev0`. 
 * Simulate projection data: `python simulate_projections_for_train_and_test.py`. Should run properly if the downloaded directory named `mayo_data` is placed inside the cloned directory. Otherwise, modify `datapath` in the script appropriately.   
 * Train and evaluate model (logs and networks are auto-saved): `python train_adversarial_LPD.py`
-* You can download the pre-trained LPD-based generator from `https://drive.google.com/file/d/1GR4yeHcCBkvoUKxRcHIyD9ssKU7lnZry/view?usp=sharing`. Once downloaded, run `python eval_adversarial_LPD.py` to run the model on test slices.  
+* You can download the pre-trained LPD-based generator from `https://drive.google.com/file/d/1GR4yeHcCBkvoUKxRcHIyD9ssKU7lnZry/view?usp=sharing` and put in inside a sub-folder named `trained_models`. Once downloaded, run `python eval_adversarial_LPD.py` to run the model on test slices.  
  

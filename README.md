@@ -3,7 +3,8 @@ This repo contains a simple pytorch implementation of the adversarially learned 
 
 If you're using the scripts for your research, please conside citing the paper: 
 
-```@misc{mukherjee2021adversarially,
+```
+@misc{mukherjee2021adversarially,
       title={Adversarially learned iterative reconstruction for imaging inverse problems}, 
       author={Subhadip Mukherjee and Ozan Öktem and Carola-Bibiane Schönlieb},
       year={2021},

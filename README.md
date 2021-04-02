@@ -16,7 +16,7 @@ If you're using the scripts for your research, please conside citing the paper:
 
 # Follow the steps below to run the code:
 
-* Get the phantoms here: https://drive.google.com/drive/folders/1SHN-yti3MgLmmW_l0agZRzMVtp0kx6dD?usp=sharing.
+* Get the phantoms here: https://drive.google.com/drive/folders/1SHN-yti3MgLmmW_l0agZRzMVtp0kx6dD?usp=sharing, and unzip the folder.
 * Create a conda environment with correct dependencies: `conda env create -f environment.yml`
 * Check if `torch` got installed properly with GPU support, in which case `print(torch.cuda.is_available())` should show `True`. 
 * Now activate your new conda environment by `conda activate env_deep_learning`, and install ODL from source (this step is important): 

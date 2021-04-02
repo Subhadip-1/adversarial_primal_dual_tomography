@@ -1,5 +1,8 @@
 # adversarial_primal_dual_tomography
-This repo contains a simple pytorch implementation of the adversarially learned primal-dual (ALPD) method for inverse problems, with applications to  CT reconstruction. Follow the steps below to run the code:
+This repo contains a simple pytorch implementation of the adversarially learned primal-dual (ALPD) method for inverse problems, with applications to  CT reconstruction. See the paper at https://arxiv.org/abs/2103.16151 for a detailed explanation of the algorithm.  
+
+
+Follow the steps below to run the code:
 
 * Get the phantoms: `https://drive.google.com/drive/folders/1SHN-yti3MgLmmW_l0agZRzMVtp0kx6dD?usp=sharing`
 * Create a conda environment with correct dependencies: `conda env create -f environment.yml`

@@ -180,9 +180,7 @@ for epoch in range(num_epochs):
         data_range=np.max(phantom_image) - np.min(phantom_image)
         psnr_on_clean_data_total += compare_psnr(phantom_image, recovered_phantom_image, data_range=data_range)
         
-        #scheduler steps
-        #scheduler_D.step()
-        #scheduler_G.step()
+        
         if(index % num_minibatches_for_avg == num_minibatches_for_avg-1):
             #compute average loss and reset total loss
             G_loss_avg = G_loss_total/num_batches

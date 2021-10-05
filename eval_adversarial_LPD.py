@@ -61,11 +61,11 @@ num_lpd_params = sum(p.numel() for p in lpd_generator.parameters())
 print(lpd_generator.sigma)
 
 #discriminator = nn.DataParallel(networks.Discriminator(in_channels=1, n_filters=64), device_ids=[4, 5, 6, 7]).to(device)
-discriminator = networks.Discriminator(in_channels=1, n_filters=64).to(device)
-discriminator.load_state_dict(torch.load(model_path + "discriminator_epoch_25.pt"))
-num_discriminator_params = sum(p.numel() for p in discriminator.parameters())
+#discriminator = networks.Discriminator(in_channels=1, n_filters=64).to(device)
+#discriminator.load_state_dict(torch.load(model_path + "discriminator_epoch_25.pt"))
+#num_discriminator_params = sum(p.numel() for p in discriminator.parameters())
 
-print('# params: LPD-net = {:d}, discriminator = {:d}'.format(num_lpd_params, num_discriminator_params))  
+#print('# params: LPD-net = {:d}, discriminator = {:d}'.format(num_lpd_params, num_discriminator_params))  
       
 ############ dataloaders #######################
 print('creating dataloaders...')
